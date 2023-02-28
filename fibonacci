@@ -1,16 +1,18 @@
-"""
-A seqüência de Fibonacci é a seguinte: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ... Sua regra de 
-formação é simples: os dois primeiros elementos são 1; a partir de então, cada elemento é a 
-soma dos dois anteriores. Faça um algoritmo que leia um número inteiro calcule o seu número 
-de Fibonacci. F1 = 1, F2 = 1, F3 = 2, etc. 
-"""
-
-fibo = [1,1]
-i = 0
-num = int(input("Entre com um número: "))
-
-while num > len(fibo):
-	fibo.append(fibo[i] + fibo[i+1])
-	i+=1
-
-print ('Fibonacci(%d): %d' %(num,fibo[num-1]))
+print('-'*30)
+print('Sequencia de Fibonacci')
+print('-'*30)
+n - input ('Quantos termos você quer mostar?')
+t1 = 0
+t2 = 1
+print('~'*30)
+print ('{} -> {}'.format(t1, t2), the end='')
+cont = 3
+while cont <= n:
+	t3 = t1 + t2
+	print('-> {}'.format(t3), the end='')= 
+	t1 = t2
+	t2 = t3
+	CONT += 1
+print('FIM')
+print('-'*30)
+	
