@@ -1,3 +1,4 @@
+<div>
 def fibonacci(n):
     a, b = 0, 1
     while b <= n:
@@ -12,6 +13,63 @@ if fibonacci(numero):
     print(f'{numero} pertence à sequencia de Fibonacci.')
 else:
     print(f'{numero} não pertence a sequência de Fibonacci.')
-                       
+<div>
 
-	
+##
+
+<div>
+def calcula_faturamento(vetor_faturamento):
+    menor_faturamento = vetor_faturamento[0]
+    maior_faturamento = vetor_faturamento[0]
+    media_mensal = sum(vetor_faturamento) / len(vetor_faturamento)
+    dias_com_faturamento_superior = 0
+    for faturamento in vetor_faturamento:
+        if faturamento < menor_faturamento:
+            menor_faturamento = faturamento
+        elif faturamento > maior_faturamento:
+            maior_faturamento = faturamento
+        if faturamento > media_mensal:
+            dias_com_faturamento_superior += 1
+    return {"menor_faturamento": menor_faturamento,
+            "maior_faturamento": maior_faturamento,
+            "dias_com_faturamento_superior": dias_com_faturamento_superior}
+
+# Programa principal
+vetor_faturamento = [1000, 1500, 800, 1200, 900, 1100, 2000, 1800, 1300, 1400, 1700, 1900, 1600, 1100, 900, 1200, 1300, 1700, 2000, 1500, 800, 1000, 1200, 1400, 1600, 1800, 1900, 1100, 900, 1300]
+resultado = calcula_faturamento(vetor_faturamento)
+print(f"Menor faturamento: {resultado['menor_faturamento']}")
+print(f"Maior faturamento: {resultado['maior_faturamento']}")
+print(f"Dias com faturamento superior à média mensal: {resultado['dias_com_faturamento_superior']}")
+<div>
+
+##
+
+<div>
+faturamento_sp = 67836.43
+faturamento_rj = 36678.66
+faturamento_mg = 29229.88
+faturamento_es = 27165.48
+faturamento_outros = 19849.53
+
+total_faturamento = faturamento_sp + faturamento_rj + faturamento_mg + faturamento_es + faturamento_outros
+
+percentual_sp = (faturamento_sp / total_faturamento) * 100
+percentual_rj = (faturamento_rj / total_faturamento) * 100
+percentual_mg = (faturamento_mg / total_faturamento) * 100
+percentual_es = (faturamento_es / total_faturamento) * 100
+percentual_outros = (faturamento_outros / total_faturamento) * 100
+
+print(f"Percentual de representação de SP: {percentual_sp:.2f}%")
+print(f"Percentual de representação de RJ: {percentual_rj:.2f}%")
+print(f"Percentual de representação de MG: {percentual_mg:.2f}%")
+print(f"Percentual de representação de ES: {percentual_es:.2f}%")
+print(f"Percentual de representação de outros estados: {percentual_outros:.2f}%")
+<div>
+
+##
+
+<div>
+ texto = "hello world"
+texto_invertido = texto[::-1]
+print(texto_invertido)
+<div>
